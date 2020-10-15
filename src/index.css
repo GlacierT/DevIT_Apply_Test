@@ -1,0 +1,131 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    background: #DCDCDC;
+}
+
+.App{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+  
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+ 
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+form input[type="text"], form textarea {
+    width: 100%;
+    max-width: 1035px;
+    border: 1px solid #39393d;
+    padding: 10px;
+    background: none;
+    margin-bottom: 10px;
+    resize: vertical;
+    font-size: 18px;
+    color: #39393d;
+    font-family: Arial;
+}
+
+form input[type="submit"]{
+    background: #39393d;
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+  
+input[type="file"] {
+    display: none;
+  }
+
+label.cover {
+    background: #39393d;
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.postsContainer {
+    display: flex;
+    margin: 40px auto;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.post {
+    width: 320px;
+    min-width: 320px;
+    background: #eee;
+    padding: 10px;
+    font-family: Arial;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 88px -23px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 88px -23px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 88px -23px rgba(0,0,0,0.75);;
+}
+
+.post h2 {
+    font-family: Arial;
+}
+
+.post > div {
+    height: 240px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.delete {
+    background: #39393d;
+    border: none;
+    padding: 10px;
+    color: #eee;
+    font-size: 18px;
+    border-radius: 5px;
+    
+    margin-left: 20px;
+}
+
+.message {
+    width: 70%;
+    text-align: center;
+    padding-top: 120px;
+    margin: 0 auto;
+    color: black; 
+    font-size: 20px;
+} 
+
+.buttonHref {
+    background: #39393d;
+    border: none;
+    padding: 10px;
+    color: #eee;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    float: left;
+}
