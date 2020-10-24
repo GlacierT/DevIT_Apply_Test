@@ -106,6 +106,26 @@ const Main = () => {
         
     }
 
+    const getPostEdit = (e) => {
+        e.preventDefault();
+        if(postTitle !== "" && postContent !== "" && postFile !== ""){
+            let post = {
+                title: postTitle,
+                content: postContent,
+                file: postFile,
+                name: postName,
+                size: postSize,
+                type: postType,
+                width: postWidth,
+                height: postHeight,
+                form: postForm
+            }
+    
+            db.posts.update(postTitle, {content: postContent, file: postFile, name: postName, size: postSize, type: postType, width: postWidth, height: postHeight, form: postForm});
+            
+        }
+    }
+
     useEffect(() => {
 
         const getPosts = async() => {
@@ -166,8 +186,28 @@ const Main = () => {
             
             <input type="submit" value="Submit" />
         </form>
-     
+
         {postData}
+
+        <form onSubmit={getPostEdit}>
+           <div className="control">
+            <h2>Сhange record by specified title (the title cannot be changed, it is used as a key)</h2>
+           </div>
+           <div className="control">
+           <label>Title</label>
+            <input type="text" name="title"  onChange={e => setTitle(e.target.value)} />
+           </div>
+           <div className="control">
+           <label>Content</label>
+            <textarea name="content"  onChange={e => setContent(e.target.value)} />
+           </div>
+           <div className="control">
+            <label htmlFor="cover" className="cover">Choose a file</label>
+            <input type="file" id="cover" name="file"  onChange={e => getFile(e.target.files)} />
+           </div>
+            
+            <button class="buttonEdit" id="edit">Edit</button>
+        </form>
       
     </React.Fragment>
   );

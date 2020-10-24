@@ -129,3 +129,13 @@ label {
     text-decoration: none;
     float: left;
 }
+
+.buttonEdit {
+    background: #39393d;
+    border: none;
+    padding: 10px;
+    color: #eee;
+    font-size: 18px;
+    border-radius: 5px;
+    float: left;
+}
