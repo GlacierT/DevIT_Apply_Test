@@ -63,7 +63,7 @@ label.cover {
 
 .postsContainer {
     display: flex;
-    margin: 40px auto;
+    margin: 100px auto;
     justify-content: space-between;
     width: 70%;
 }
@@ -138,4 +138,7 @@ label {
     font-size: 18px;
     border-radius: 5px;
     float: left;
+    font-family: Arial;
+    font-weight: bold;
+    margin-top: 30px;
 }

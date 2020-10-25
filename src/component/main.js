@@ -187,9 +187,7 @@ const Main = () => {
             <input type="submit" value="Submit" />
         </form>
 
-        {postData}
-
-        <form onSubmit={getPostEdit}>
+         <form onSubmit={getPostEdit}>
            <div className="control">
             <h2>Сhange record by specified title (the title cannot be changed, it is used as a key)</h2>
            </div>
@@ -206,8 +204,10 @@ const Main = () => {
             <input type="file" id="cover" name="file"  onChange={e => getFile(e.target.files)} />
            </div>
             
-            <button class="buttonEdit" id="edit">Edit</button>
+            <button class="buttonEdit" id="edit">Сhange</button>
         </form>
+
+        {postData}
       
     </React.Fragment>
   );
